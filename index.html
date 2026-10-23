@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="SolusiKorporat - konsultasi bisnis, operasional, dan digitalisasi.">
+<title>SolusiKorporat | Solusi Bisnis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#172033;--accent:#2563eb;--text:#334155;--muted:#64748b;--bg:#fff9df;--surface:#fff;--soft:#fffdf2;--border:#e7dfbd;--shadow:0 10px 28px #17203312}
+body.dark{--primary:#f1f5f9;--accent:#80aaff;--text:#e2e8f0;--muted:#aab7ca;--bg:#111827;--surface:#1f2937;--soft:#172033;--border:#374151;--shadow:0 10px 28px #0004}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:"Plus Jakarta Sans",sans-serif;background:var(--bg);color:var(--text);line-height:1.7;transition:background .2s,color .2s}
+a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}.container{width:min(1160px,calc(100% - 36px));margin:auto}
+.top{background:#172033;color:#fff;padding:8px 0;font-size:13px}.topin{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+header{position:sticky;top:0;z-index:20;background:var(--surface);border-bottom:1px solid var(--border);box-shadow:0 3px 12px #0001}
+nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}.logo{font-weight:800;font-size:22px;color:var(--primary)}.logo span{color:var(--accent)}
+.links{display:flex;align-items:center;gap:22px;list-style:none}.links a{font-size:14px;font-weight:600}.links a:hover{color:var(--accent)}
+.navtools{display:flex;gap:8px}.smallbtn{background:var(--surface);color:var(--text);border:1px solid var(--border);padding:8px 11px;border-radius:9px;cursor:pointer}.menu{display:none}
+.btn{display:inline-block;border:0;border-radius:9px;padding:12px 20px;font-weight:700;cursor:pointer}.primary{background:var(--accent);color:white}.outline{border:2px solid white;color:white}
+.hero{padding:100px 20px;text-align:center;color:white;background:linear-gradient(120deg,#0f172ae8,#2563ebbb),url("https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1500&q=80") center/cover}
+.eyebrow{color:var(--accent);font-size:13px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase}.hero .eyebrow{color:#bfdbfe}
+h1{font-size:clamp(34px,5vw,54px);line-height:1.15;max-width:850px;margin:12px auto 18px}.hero p{max-width:700px;margin:0 auto 28px;color:#e2e8f0}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.stats{background:#172033;color:#fff;padding:40px 0}.statsgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}.stat h3{font-size:36px;color:#93b7ff;line-height:1.2}.stat p{font-size:13px;color:#cbd5e1}
+section{scroll-margin-top:82px}.section{padding:78px 0}.head{text-align:center;max-width:760px;margin:0 auto 35px}.head h2{font-size:clamp(27px,3.5vw,37px);line-height:1.25;color:var(--primary);margin:8px 0 12px}.head p,.muted{color:var(--muted)}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}.aboutimg{min-height:350px;border-radius:16px;background:url("https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80") center/cover}.about h2{font-size:32px;line-height:1.25;color:var(--primary);margin:10px 0 16px}.about p{margin:0 0 12px;color:var(--muted)}.checks{list-style:none;margin-top:15px}.checks li:before{content:"✓";color:var(--accent);font-weight:800;margin-right:10px}
+.searchwrap{text-align:center;margin:-8px auto 25px}.search{width:min(520px,100%);padding:13px 15px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--text);outline:none}.search:focus,input:focus,textarea:focus{border-color:var(--accent)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:28px;box-shadow:var(--shadow);transition:transform .2s}.card:hover{transform:translateY(-4px)}.emoji{font-size:32px}.card h3{color:var(--primary);font-size:19px;margin:10px 0}.card p{font-size:14px;color:var(--muted)}.empty{text-align:center;padding:20px;color:var(--muted);display:none}
+.testimonials{background:var(--soft)}.quote{background:var(--surface);border:1px solid var(--border);border-radius:13px;padding:25px}.stars{color:#eab308;letter-spacing:2px}.quote blockquote{margin:12px 0 18px;font-size:14px}.quote strong{color:var(--primary)}.quote small{display:block;color:var(--muted)}
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}.contactinfo{background:#172033;color:white;padding:36px}.contactinfo h3{font-size:24px;margin-bottom:10px}.contactinfo p{color:#cbd5e1;font-size:14px;margin-bottom:20px}.contactline{margin:17px 0;font-size:14px;overflow-wrap:anywhere}.contactline b{display:block;color:#93b7ff}
+.form{padding:36px}.field{margin-bottom:16px}.field label{display:block;color:var(--primary);font-size:13px;font-weight:700;margin-bottom:6px}.field input,.field textarea{width:100%;padding:12px;border:1px solid var(--border);border-radius:8px;background:var(--surface);color:var(--text);outline:none}.field textarea{min-height:115px;resize:vertical}.note{font-size:12px;color:var(--muted);margin-top:10px}.status{display:none;background:#dcfce7;color:#166534;border-radius:8px;padding:10px;margin-top:12px;font-size:13px}
+footer{background:#090d16;color:#94a3b8;text-align:center;padding:28px 15px;font-size:13px}.footerlogo{font-weight:800;color:white;font-size:20px}
+.backtop{display:none;position:fixed;right:18px;bottom:18px;border:0;border-radius:50%;width:48px;height:48px;background:var(--accent);color:#fff;font-size:22px;cursor:pointer;box-shadow:var(--shadow);z-index:15}.backtop.show{display:block}
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .5s,transform .5s}.reveal.visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
+@media(max-width:900px){.links{gap:12px}.links a{font-size:12px}.cards{grid-template-columns:repeat(2,1fr)}.contact{grid-template-columns:1fr}}
+@media(max-width:700px){.topin{justify-content:center;text-align:center}nav{min-height:66px}.menu{display:inline-block}.links{display:none;position:absolute;top:66px;left:0;right:0;padding:18px;background:var(--surface);border-bottom:1px solid var(--border);flex-direction:column;align-items:stretch;gap:12px}.links.open{display:flex}.links a{display:block;padding:5px;font-size:15px}.hero{padding:75px 18px}.section{padding:55px 0}.statsgrid{grid-template-columns:repeat(2,1fr);gap:24px 10px}.about{grid-template-columns:1fr}.aboutimg{min-height:240px}.cards{grid-template-columns:1fr}.contactinfo,.form{padding:25px 20px}}
+</style>
+</head>
+<body>
+<div class="top"><div class="container topin"><span>📞 Hubungi Kami: <a href="tel:081400704056">081400704056</a></span><span>✉️ <a href="mailto:kadalgurun1016@gmail.com">kadalgurun1016@gmail.com</a></span></div></div>
+<header><nav class="container" aria-label="Navigasi utama">
+<a class="logo" href="#home">Solusi<span>Korporat</span>.</a>
+<ul class="links" id="navLinks"><li><a href="#home">Beranda</a></li><li><a href="#about">Tentang Kami</a></li><li><a href="#services">Layanan</a></li><li><a href="#testimonials">Testimoni</a></li><li><a href="#contact">Kontak</a></li></ul>
+<div class="navtools"><button class="smallbtn" id="themeToggle" type="button" aria-label="Ganti tema">🌙</button><button class="smallbtn menu" id="menuToggle" type="button" aria-label="Buka menu" aria-expanded="false">☰</button></div>
+</nav></header>
+<main>
+<section class="hero" id="home"><span class="eyebrow">Partner Pertumbuhan Bisnis Anda</span><h1>Transformasi &amp; Akselerasi Pertumbuhan Bisnis Anda</h1><p>Kami menyediakan layanan konsultasi strategis, transformasi digital, dan manajemen operasional profesional untuk membantu bisnis berkembang secara berkelanjutan.</p><div class="actions"><a class="btn primary" href="#services">Jelajahi Layanan ↓</a><a class="btn outline" href="#contact">Hubungi Ahli Kami</a></div></section>
+<section class="stats"><div class="container statsgrid"><div class="stat"><h3 data-count="10" data-suffix="+">0</h3><p>Tahun Pengalaman</p></div><div class="stat"><h3 data-count="250" data-suffix="+">0</h3><p>Klien Korporat</p></div><div class="stat"><h3 data-count="98" data-suffix="%">0</h3><p>Tingkat Kepuasan</p></div><div class="stat"><h3 data-count="24" data-suffix="/7">0</h3><p>Dukungan Operasional</p></div></div></section>
+<section class="section container" id="about"><div class="about"><div class="aboutimg reveal" role="img" aria-label="Tim profesional berdiskusi"></div><div class="reveal"><span class="eyebrow">Tentang Perusahaan</span><h2>Mitra Strategis Terpercaya untuk Kesuksesan Jangka Panjang</h2><p>SolusiKorporat membantu menjawab tantangan bisnis modern melalui pendekatan yang terencana, kolaboratif, dan berbasis data.</p><p>Tim profesional kami berfokus pada efisiensi, inovasi, dan solusi sesuai kebutuhan setiap perusahaan.</p><ul class="checks"><li>Pendekatan sesuai kebutuhan bisnis</li><li>Fokus pada efisiensi dan hasil terukur</li><li>Dukungan perencanaan hingga evaluasi</li></ul></div></div></section>
+<section class="section container" id="services"><div class="head reveal"><span class="eyebrow">Layanan Unggulan</span><h2>Solusi Komprehensif untuk Bisnis Anda</h2><p>Cari layanan berdasarkan nama atau kebutuhan Anda.</p></div><div class="searchwrap"><input id="serviceSearch" class="search" type="search" placeholder="🔎 Cari layanan, misalnya digitalisasi..." aria-label="Cari layanan"></div>
+<div class="cards" id="servicesGrid">
+<article class="card reveal" data-search="konsultasi strategi bisnis risiko ekspansi"><div class="emoji">📊</div><h3>Konsultasi Strategi Bisnis</h3><p>Membantu merumuskan arah kebijakan, manajemen risiko, dan ekspansi pasar secara terukur.</p></article>
+<article class="card reveal" data-search="transformasi operasional produktivitas efisiensi"><div class="emoji">⚙️</div><h3>Transformasi Operasional</h3><p>Mengoptimalkan alur kerja untuk membantu mengendalikan biaya dan meningkatkan produktivitas.</p></article>
+<article class="card reveal" data-search="digitalisasi korporat teknologi otomatisasi"><div class="emoji">💻</div><h3>Digitalisasi Korporat</h3><p>Mengintegrasikan teknologi dan otomatisasi agar proses bisnis lebih efektif dan adaptif.</p></article>
+<article class="card reveal" data-search="analisis data laporan dashboard"><div class="emoji">📈</div><h3>Analisis Data Bisnis</h3><p>Mengolah data menjadi wawasan untuk membantu evaluasi dan pengambilan keputusan.</p></article>
+<article class="card reveal" data-search="pelatihan tim sumber daya manusia kepemimpinan"><div class="emoji">🎯</div><h3>Pelatihan Tim</h3><p>Mendukung pengembangan kemampuan, kolaborasi, dan kepemimpinan tim.</p></article>
+<article class="card reveal" data-search="manajemen proyek perencanaan evaluasi"><div class="emoji">🗂️</div><h3>Manajemen Proyek</h3><p>Membantu perencanaan, pemantauan, dan evaluasi proyek agar tetap terarah.</p></article>
+</div><p class="empty" id="emptyState">Layanan tidak ditemukan. Coba kata kunci lain.</p></section>
+<section class="section testimonials" id="testimonials"><div class="container"><div class="head reveal"><span class="eyebrow">Testimoni Klien</span><h2>Apa Kata Mereka yang Telah Bekerja Sama</h2><p>Contoh testimoni ini dapat diganti dengan ulasan klien yang sebenarnya.</p></div><div class="cards">
+<article class="quote reveal"><div class="stars">★★★★★</div><blockquote>“Pendekatan konsultasi yang terstruktur membantu tim kami melihat proses kerja dari sudut pandang baru.”</blockquote><strong>Budi Santoso</strong><small>Direktur Operasional</small></article>
+<article class="quote reveal"><div class="stars">★★★★★</div><blockquote>“Diskusi transformasi digital membantu kami memetakan prioritas pengembangan sistem.”</blockquote><strong>Siti Rahmawati</strong><small>Pemimpin Tim Digital</small></article>
+<article class="quote reveal"><div class="stars">★★★★★</div><blockquote>“Perencanaan yang jelas membuat evaluasi kebutuhan bisnis menjadi lebih terarah.”</blockquote><strong>Hendra Wijaya</strong><small>Manajer Bisnis</small></article>
+</div></div></section>
+<section class="section container" id="contact"><div class="head reveal"><span class="eyebrow">Hubungi Kami</span><h2>Mari Diskusikan Kebutuhan Bisnis Anda</h2><p>Isi formulir untuk menyiapkan pesan konsultasi melalui WhatsApp.</p></div>
+<div class="contact reveal"><aside class="contactinfo"><h3>Informasi Kontak</h3><p>Hubungi kami untuk membicarakan kebutuhan bisnis dan jadwal konsultasi awal.</p><div class="contactline"><b>📍 Alamat</b>Jln.Raya hankam kec pondok melati Bekasi</div><div class="contactline"><b>📞 Telepon / WhatsApp</b><a href="tel:081400704056">081400704056</a></div><div class="contactline"><b>✉️ Email</b><a href="mailto:kadalgurun1016@gmail.com">kadalgurun1016@gmail.com</a></div><div class="contactline"><b>🕒 Jam Layanan</b>Senin–Jumat, 08.00–17.00 WIB</div></aside>
+<form class="form" id="contactForm"><div class="field"><label for="name">Nama Lengkap</label><input id="name" name="name" autocomplete="name" placeholder="Masukkan nama Anda" minlength="2" required></div><div class="field"><label for="email">Alamat Email</label><input id="email" name="email" type="email" autocomplete="email" placeholder="nama@perusahaan.com" required></div><div class="field"><label for="phone">Nomor Telepon / WhatsApp</label><input id="phone" name="phone" type="tel" pattern="[0-9+() -]{8,20}" placeholder="08xxxxxxxxxx" required></div><div class="field"><label for="message">Pesan / Detail Kebutuhan</label><textarea id="message" name="message" minlength="10" placeholder="Tuliskan kebutuhan konsultasi Anda..." required></textarea></div><button class="btn primary" type="submit" style="width:100%">Kirim melalui WhatsApp ↗</button><p class="note">WhatsApp akan terbuka dengan pesan yang sudah disiapkan. Anda tetap perlu menekan tombol Kirim di WhatsApp.</p><div class="status" id="formStatus" role="status" aria-live="polite"></div></form></div></section>
+</main>
+<footer><div class="footerlogo">SolusiKorporat.</div><p>Mitra untuk pertumbuhan bisnis dan transformasi digital.</p><p style="margin-top:10px">&copy; <span id="year"></span> SolusiKorporat. Hak cipta dilindungi.</p></footer>
+<button class="backtop" id="backTop" type="button" aria-label="Kembali ke atas" title="Kembali ke atas">↑</button>
+<script>
+const menuToggle=document.getElementById('menuToggle'),navLinks=document.getElementById('navLinks');
+menuToggle.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');menuToggle.setAttribute('aria-expanded',String(open));menuToggle.textContent=open?'✕':'☰';});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{navLinks.classList.remove('open');menuToggle.setAttribute('aria-expanded','false');menuToggle.textContent='☰';}));
+
+const themeToggle=document.getElementById('themeToggle');
+try{if(localStorage.getItem('solusikorporat-theme')==='dark')document.body.classList.add('dark');}catch(e){}
+function setThemeIcon(){const dark=document.body.classList.contains('dark');themeToggle.textContent=dark?'☀️':'🌙';themeToggle.setAttribute('aria-label',dark?'Aktifkan mode terang':'Aktifkan mode gelap');}
+setThemeIcon();
+themeToggle.addEventListener('click',()=>{document.body.classList.toggle('dark');setThemeIcon();try{localStorage.setItem('solusikorporat-theme',document.body.classList.contains('dark')?'dark':'light');}catch(e){}});
+
+const search=document.getElementById('serviceSearch'),cards=[...document.querySelectorAll('#servicesGrid .card')],empty=document.getElementById('emptyState');
+search.addEventListener('input',()=>{const q=search.value.trim().toLowerCase();let count=0;cards.forEach(card=>{const match=(card.dataset.search+' '+card.innerText).toLowerCase().includes(q);card.hidden=!match;if(match)count++;});empty.style.display=count?'none':'block';});
+
+const reveals=document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.12});reveals.forEach(el=>observer.observe(el));}else reveals.forEach(el=>el.classList.add('visible'));
+
+let counted=false;function runCounters(){if(counted)return;counted=true;document.querySelectorAll('[data-count]').forEach(el=>{const target=Number(el.dataset.count),suffix=el.dataset.suffix||'',start=performance.now(),duration=1100;function tick(now){const p=Math.min((now-start)/duration,1),ease=1-Math.pow(1-p,3);el.textContent=Math.round(target*ease)+suffix;if(p<1)requestAnimationFrame(tick);}requestAnimationFrame(tick);});}
+if('IntersectionObserver' in window){const statsObserver=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting)){runCounters();statsObserver.disconnect();}},{threshold:.2});statsObserver.observe(document.querySelector('.stats'));}else runCounters();
+
+document.getElementById('contactForm').addEventListener('submit',event=>{event.preventDefault();const form=event.currentTarget;if(!form.reportValidity())return;const data=new FormData(form);const text=['Halo SolusiKorporat, saya ingin konsultasi.','','Nama: '+data.get('name').trim(),'Email: '+data.get('email').trim(),'Telepon: '+data.get('phone').trim(),'Kebutuhan: '+data.get('message').trim()].join('\\n');const whatsappNumber='6281400704056';const url='https://wa.me/'+whatsappNumber+'?text='+encodeURIComponent(text);const status=document.getElementById('formStatus');status.style.display='block';status.textContent='WhatsApp akan dibuka. Periksa pesan lalu tekan Kirim di WhatsApp.';window.open(url,'_blank','noopener,noreferrer');});
+
+const backTop=document.getElementById('backTop');window.addEventListener('scroll',()=>backTop.classList.toggle('show',window.scrollY>400),{passive:true});backTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
